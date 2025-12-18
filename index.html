@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <title>YIJU Artworks</title>
+    <meta charset="utf-8">
+    <link rel="icon" href="RU.png" type="image/png">
+
+    <style>
+        body {
+            margin: 0;
+            background-color: black;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 40px 0;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            text-align: left;
+        }
+
+        h1 {
+            color: white;
+            font-weight: 300;
+            letter-spacing: 2px;
+            margin-bottom: 40px;
+            opacity: 0.8;
+        }
+
+        .works {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 30px;
+        }
+
+        .work-container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .work {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+
+    aspect-ratio: 1 / 1; 
+}
+
+.work img {
+    width: 100%;
+    height: 100%;          
+    object-fit: cover;
+
+    display: block;
+    transition: opacity 0.4s ease;
+}
+
+
+        .work:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 25px rgba(255, 255, 255, 0.25);
+        }
+
+        .work:hover img {
+            opacity: 0.85;
+        }
+
+        .code-block {
+            margin-top: 15px;
+        }
+
+        .toggle-btn {
+    width: 100%;
+    background: none;
+    border: 1px solid rgba(255,255,255,0.3);
+    color: white;
+    padding: 12px 16px;
+    font-size: 0.9em;
+    text-align: left;
+    cursor: pointer;
+    letter-spacing: 1px;
+    border-radius: 8px;
+    transition: background 0.3s ease, opacity 0.3s ease;
+
+    min-height: 48px;          
+    display: flex;             
+    align-items: center;       
+}
+
+
+        .toggle-btn:hover {
+            background: rgba(255,255,255,0.1);
+        }
+
+        .code-block pre {
+            max-height: 0;
+            overflow: hidden;
+            background: #111;
+            border-radius: 12px;
+            transition: max-height 0s ease;
+            margin: 0;
+        }
+
+        .code-block.open pre {
+            max-height: 500px;
+            padding: 20px;
+            overflow: auto;
+        }
+
+        .code-block code {
+    font-family: Arial, "Microsoft JhengHei", sans-serif;
+    font-size: 0.9em;
+    line-height: 1.8;
+    color: #e0e0e0;
+    white-space: normal;   /* 讓文字正常換行 */
+    }
+
+
+        .coming {
+            margin-top: 50px;
+            color: white;
+            font-size: 0.9em;
+            opacity: 0.5;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>My Artworks</h1>
+
+        <div class="works">
+            <!-- Artwork 1 -->
+            <div class="work-container">
+                <a class="work" href="https://akaswap.com/akaobj/26293" target="_blank">
+                    <img src="bubble.png" alt="Artwork 1">
+                </a>
+                <div class="code-block">
+                    <button class="toggle-btn">▶《Bubblessss》 作品介紹</button>
+                    <pre><code>
+                        氣泡作為短暫存在的單位，在畫面中不斷生成、上升與消失。作品透過重複與隨機的生成邏輯，呈現數位系統中「出現—破裂—重組」的循環狀態，隱喻當代資訊環境中短暫被注意、又迅速消逝的感知經驗。
+                    </code></pre>
+                </div>
+            </div>
+
+            <div class="work-container">
+                <a class="work" href="https://akaswap.com/akaobj/26299" target="_blank">
+                    <img src="s2.png" alt="Artwork 2">
+                </a>
+                <div class="code-block">
+                    <button class="toggle-btn">▶ 《Fetus》作品介紹</button>
+                    <pre><code>作品透過數位生成方式模擬胎兒過程，以極簡的節奏呈現，並邀請觀者思考：在科技介入下，生命的起點如何被觀看、被記錄。</code></pre>
+                </div>
+            </div>
+
+            <!-- Artwork 3 -->
+            <div class="work-container">
+                <a class="work" href="https://akaswap.com/akaobj/26300" target="_blank">
+                    <img src="s3.png" alt="Artwork 3">
+                </a>
+                <div class="code-block">
+                    <button class="toggle-btn">▶ 《SkyLanternsss》作品介紹</button>
+                    <pre><code>天燈承載著願望與記憶，在聲音的牽引下閃爍，作品以光的節奏回應音樂，將聽覺訊號轉化為視覺回應。</code></pre>
+                </div>
+            </div>
+
+            <!-- Artwork 4 -->
+            <div class="work-container">
+                <a class="work" href="https://akaswap.com/akaobj/26292" target="_blank">
+                    <img src="s4.png" alt="Artwork 4">
+                </a>
+                <div class="code-block">
+                    <button class="toggle-btn">▶ 《piano_WaterDrop》作品介紹</button>
+                    <pre><code>作品將鋼琴聲轉譯為水的運動，在數位模擬中，聲音成為觸發水滴與漣漪的能量。</code></pre>
+                </div>
+            </div>
+
+            <!-- Artwork 5 -->
+            <div class="work-container">
+                <a class="work" href="https://editor.p5js.org/qqliu97/full/NQv_61QZg" target="_blank">
+                    <img src="s5.png" alt="Artwork 5">
+                </a>
+                <div class="code-block">
+                    <button class="toggle-btn">▶《Flow Field》作品介紹</button>
+                    <pre><code>作品以 Perlin noise 作為生成基礎，建構由粒子與曲線組成的流動場域。雖路徑遵循同一套演算法規則，卻在隨機與連續之間形成獨特軌跡，呈現秩序與不確定性並存的狀態。</code></pre>
+                </div>
+            </div>
+
+            <!-- Artwork 6 -->
+            <div class="work-container">
+                <a class="work" href="https://editor.p5js.org/qqliu97/full/t2LqFNoWk" target="_blank">
+                    <img src="s6.png" alt="Artwork 6">
+                </a>
+                <div class="code-block">
+                    <button class="toggle-btn">▶《Micro Cosmos》作品介紹</button>
+                    <pre><code>作品模擬微觀世界中粒子的運動：不同顏色、不同方向，像是細胞、氣泡或星際粒子漂浮，彷彿置身於色彩流動的海洋，感受不同方向的微妙互動與和諧。</code></pre>
+                </div>
+            </div>
+
+            <!-- Artwork 7 -->
+            <div class="work-container">
+                <a class="work" href="https://editor.p5js.org/qqliu97/full/t4C1pLLhJ" target="_blank">
+                    <img src="s7.png" alt="Artwork 7">
+                </a>
+                <div class="code-block">
+                    <button class="toggle-btn">▶ 《Tessellation》作品介紹</button>
+                    <pre><code>六邊形的排列模擬自然界與數學中的蜂巢結構，但每個單元的大小與位置隨時間變化，作品用簡單的幾何形狀，營造出深邃的科技感與未來感。</code></pre>
+                </div>
+            </div>
+
+            <!-- Artwork 8 -->
+            <div class="work-container">
+                <a class="work" href="https://editor.p5js.org/qqliu97/full/bW3chDn7W" target="_blank">
+                    <img src="s8.png" alt="Artwork 8">
+                </a>
+                <div class="code-block">
+                    <button class="toggle-btn">▶《Colorful Polygon》作品介紹</button>
+                    <pre><code>多邊形曲線像光線折射般環繞旋轉，隨著漸近圓弧形成柔和曲線。作品將自然界光與色彩的流動抽象化，呈現秩序與柔韌並存的動態美感。</code></pre>
+                </div>
+            </div>
+        </div>
+
+        <div class="coming">
+            New works in progress...
+        </div>
+    </div>
+
+    <script>
+        const toggles = document.querySelectorAll('.toggle-btn');
+
+        toggles.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const block = btn.parentElement;
+                block.classList.toggle('open');
+
+                if (block.classList.contains('open')) {
+                    btn.textContent = btn.textContent.replace('Show', 'Hide');
+                } else {
+                    btn.textContent = btn.textContent.replace('Hide', 'Show');
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
